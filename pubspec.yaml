@@ -1,0 +1,123 @@
+name: loginapp
+description: "A new Flutter project."
+
+
+publish_to: 'none' 
+
+
+
+
+
+
+
+
+
+
+
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+
+
+
+
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  
+  
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_native_splash: 2.3.10
+
+  get: ^4.6.6
+  liquid_swipe: ^3.1.0
+  smooth_page_indicator: ^1.1.0
+  flutter_otp_text_field: ^1.1.1
+  firebase_auth: ^4.17.8
+  line_awesome_flutter: ^2.0.0
+  cloud_firestore: ^4.15.8
+  firebase_core: ^2.27.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  
+  
+  
+  
+  
+  flutter_lints: ^3.0.1
+
+flutter_native_splash:
+  color: "#f7f6f1"
+  color_dark: "#272727"
+  image: assets/images/burger_logo.png
+  image_dark: assets/images/burger_logo.png
+
+  android_12:
+    image: assets/images/burger_logo.png
+    icon_background_color: "#f7f6f1"
+    image_dark: assets/images/burger_logo.png
+    icon_background_color_dark: "#272727"
+
+
+
+
+
+
+flutter:
+
+  
+  
+  
+  uses-material-design: true
+
+  
+  assets:
+    - assets/images/
+    - assets/images/on_boarding_images/
+    - assets/images/splash_images/
+    - assets/images/welcome_images/
+    - assets/logo/
+    - assets/images/forgot_password/
+    - assets/images/dashboard/
+    - assets/images/profile/
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
