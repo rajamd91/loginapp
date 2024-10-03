@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
-import 'package:loginapp/src/features/authentication/controllers/profile_controller.dart';
-import 'package:loginapp/src/features/authentication/models/user_model.dart';
+// import 'package:loginapp/src/features/authentication/controllers/profile_controller.dart';
+// import 'package:loginapp/src/features/authentication/models/user_model.dart';
 
-import '../constants/sizes.dart';
-import '../constants/text_strings.dart';
+// import '../constants/sizes.dart';
+// import '../constants/text_strings.dart';
+import '../../features/authentication/controllers/profile_controller.dart';
+import '../../features/authentication/models/user_model.dart';
+import '../../utils/constants/sizes.dart';
+import '../../utils/constants/text_strings.dart';
+// import '../utils/constants/sizes.dart';
+// import '../utils/constants/text_strings.dart';
 
 class AllUsersDetails extends StatelessWidget {
   const AllUsersDetails({super.key});
@@ -50,7 +56,8 @@ class AllUsersDetails extends StatelessWidget {
                               subtitle: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Name:${snapshot.data![index].phoneNo}"),
+                                  Text(
+                                      "Name:${snapshot.data![index].phoneNumber}"),
                                   Text("Name:${snapshot.data![index].email}"),
                                 ],
                               ),

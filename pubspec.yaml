@@ -40,12 +40,28 @@ dependencies:
 
   get: ^4.6.6
   liquid_swipe: ^3.1.0
-  smooth_page_indicator: ^1.1.0
+  smooth_page_indicator: ^1.2.0+3
   flutter_otp_text_field: ^1.1.1
   firebase_auth: ^4.17.8
   line_awesome_flutter: ^2.0.0
   cloud_firestore: ^4.15.8
   firebase_core: ^2.27.0
+  lottie: ^3.1.0
+  connectivity_plus: ^5.0.1
+  iconsax: ^0.0.8
+  http: ^1.2.1
+  intl: ^0.19.0
+  logger: ^2.2.0
+  url_launcher: ^6.2.6
+  get_storage: ^2.1.1
+  readmore: ^3.0.0
+  carousel_slider: ^4.2.1
+  flutter_rating_bar: ^4.0.1
+  google_sign_in: ^6.2.1
+  shimmer: ^3.0.0
+  image_picker: ^1.1.2
+  firebase_storage: ^11.7.7
+  cached_network_image: ^3.4.0
 
 
 dev_dependencies:
@@ -89,10 +105,19 @@ flutter:
     - assets/images/on_boarding_images/
     - assets/images/splash_images/
     - assets/images/welcome_images/
-    - assets/logo/
     - assets/images/forgot_password/
     - assets/images/dashboard/
     - assets/images/profile/
+    - assets/images/auth_images/
+    - assets/images/shoes_images/
+    - assets/images/products/
+    - assets/images/user/
+    - assets/images/reviews/
+    - assets/icons/payment_methods/
+    - assets/images/banners/
+    - assets/images/animations/
+    - assets/logos/
+    - assets/icons/category_model/
 
   
 
