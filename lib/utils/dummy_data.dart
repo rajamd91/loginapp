@@ -1,10 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:loginapp/features/shop/models/brand_model.dart';
 import 'package:loginapp/features/shop/models/category_model.dart';
 import 'package:loginapp/features/shop/models/product_attribute_model.dart';
 import 'package:loginapp/features/shop/models/product_variation_model.dart';
-
-import '../features/authentication/models/user_model.dart';
 import '../features/shop/models/banner_model.dart';
 import '../features/shop/models/product_model.dart';
 import '../routes/routes.dart';

@@ -1,12 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:loginapp/common/widgets/appbar/appbar.dart';
-import 'package:loginapp/common/widgets/layouts/grid_layout.dart';
-import 'package:loginapp/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:loginapp/common/widgets/shimmers/vertical_product_shimmer.dart';
-
 import '../../../../common/widgets/products/sortable/sortable_products.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/helpers/cloud_helper_functions.dart';

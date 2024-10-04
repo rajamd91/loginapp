@@ -1,14 +1,9 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loginapp/features/shop/controllers/category_controller.dart';
 import 'package:loginapp/features/shop/screens/sub_category/sub_categories.dart';
 import '../../../../../../common/widgets/image_text_widgets/vertical_image_text.dart';
-//import '../../../../../constants/image_strings.dart';
-import '../../../../../../utils/constants/image_strings.dart';
 import '../../../../../common/widgets/shimmers/category_shimmer.dart';
-//import '../../../../../utils/constants/image_strings.dart';
 
 class THomeCategories extends StatelessWidget {
   const THomeCategories({

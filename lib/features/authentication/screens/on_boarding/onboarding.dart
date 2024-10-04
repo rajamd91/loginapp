@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -9,8 +8,6 @@ import 'package:loginapp/features/authentication/screens/on_boarding/widgets/onb
 import 'package:loginapp/utils/constants/sizes.dart';
 import 'package:loginapp/utils/device/device_utility.dart';
 import 'package:loginapp/utils/helpers/helper_functions.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/text_strings.dart';

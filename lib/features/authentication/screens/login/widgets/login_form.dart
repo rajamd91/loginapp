@@ -1,27 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-//import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:loginapp/features/authentication/screens/signup/signup_screen.dart';
-import 'package:loginapp/navigation_menu.dart';
-//import 'package:loginapp/src/features/authentication/screens/dashboard/dashboard.dart';
-//import 'package:loginapp/src/features/authentication/screens/password_configuration/forget_password.dart';
-//import 'package:loginapp/src/utils/validators/validation.dart';
-
-// import '../../../../constants/colors.dart';
-// import '../../../../constants/sizes.dart';
-// import '../../../../constants/text_strings.dart';
-//import '../../../../repository/authentication_repository/authentication_repository.dart';
-import '../../../../../../utils/constants/colors.dart';
 import '../../../../../../utils/constants/sizes.dart';
 import '../../../../../../utils/constants/text_strings.dart';
 import '../../../../../../utils/validators/validation.dart';
-// import '../../../../utils/constants/colors.dart';
-// import '../../../../utils/constants/sizes.dart';
-// import '../../../../utils/constants/text_strings.dart';
 import '../../../controllers/login/login_controller.dart';
 import '../../password_configuration/forget_password.dart';
-//import '../forgot_password/forgot_password_options/forget_password_model_bottom_sheet.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({

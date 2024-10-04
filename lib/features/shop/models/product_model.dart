@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/material.dart';
 import 'package:loginapp/features/shop/models/product_attribute_model.dart';
 import 'package:loginapp/features/shop/models/product_variation_model.dart';
 

@@ -22,7 +22,7 @@ class BannerRepository extends GetxController {
     } on FirebaseException catch (e) {
       // throw TFirebaseException
       throw e.code;
-    } on FormatException catch (e) {
+    } on FormatException {
       throw 'Enter correct format';
     } on PlatformException catch (e) {
       throw e.code;

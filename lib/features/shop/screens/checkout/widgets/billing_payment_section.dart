@@ -4,9 +4,7 @@ import 'package:loginapp/common/widgets/custom_shapes/containers/rounded_contain
 import 'package:loginapp/common/widgets/texts/section_heading.dart';
 import 'package:loginapp/utils/constants/sizes.dart';
 import 'package:loginapp/utils/helpers/helper_functions.dart';
-
 import '../../../../../utils/constants/colors.dart';
-import '../../../../../utils/constants/image_strings.dart';
 import '../../../controllers/products/checkout_controller.dart';
 
 class TBillingPaymentSection extends StatelessWidget {

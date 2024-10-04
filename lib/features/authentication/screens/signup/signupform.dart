@@ -1,10 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:loginapp/features/authentication/screens/mail_verification/verify_email.dart';
-import 'package:loginapp/utils/helpers/helper_functions.dart';
-import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
 import '../../../../../utils/validators/validation.dart';
@@ -15,7 +11,7 @@ class TSignupForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    //final dark = THelperFunctions.isDarkMode(context);
     final controller = Get.put(SignUpController());
     //final formKey = GlobalKey<FormState>();
     return Form(
@@ -98,12 +94,6 @@ class TSignupForm extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () => controller.signup(),
-              //   if (formKey.currentState!.validate()) {
-              //     SignUpController.instance.registerUser(
-              //         controller.email.text.trim(),
-              //         controller.password.text.trim());
-              //   }
-              // },
               child: const Text(TTexts.tCreateAccount),
             ),
           ),

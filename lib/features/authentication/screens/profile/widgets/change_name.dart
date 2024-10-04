@@ -3,10 +3,8 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:loginapp/common/widgets/appbar/appbar.dart';
 import 'package:loginapp/utils/constants/sizes.dart';
-
 import '../../../../../utils/constants/text_strings.dart';
 import '../../../../../utils/validators/validation.dart';
-import '../../../../personalization/controllers/user_controller.dart';
 import '../../../controllers/update_name_controller.dart';
 
 class ChangeName extends StatelessWidget {

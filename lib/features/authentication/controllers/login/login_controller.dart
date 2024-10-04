@@ -62,14 +62,15 @@ class LoginController extends GetxController {
       }
 
       /// Login User using Email and Password Authentication
-      final userCredentials = await AuthenticationRepository.instance
-          .loginWithEmailAndPassword(email.text.trim(), password.text.trim());
+      final userCredentials = AuthenticationRepository.instance;
+      userCredentials.loginWithEmailAndPassword(
+          email.text.trim(), password.text.trim());
 
       // Remove loader
       TFullScreenLoader.stopLoading();
 
       /// Redirect
-      AuthenticationRepository.instance.screenRedirect();
+      userCredentials.screenRedirect();
     } catch (e) {
       TFullScreenLoader.stopLoading();
       TLoaders.errorSnackBar(title: 'Oh Snap!', message: e.toString());

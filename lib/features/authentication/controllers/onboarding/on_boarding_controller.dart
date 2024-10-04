@@ -1,13 +1,7 @@
-import 'dart:ffi';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:liquid_swipe/PageHelpers/LiquidController.dart';
 import 'package:loginapp/features/authentication/screens/login/login_screen.dart';
-import '../../../../../utils/constants/colors.dart';
-import '../../../../../utils/constants/image_strings.dart';
-import '../../../../../utils/constants/text_strings.dart';
-import '../../models/model_on_boarding.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();

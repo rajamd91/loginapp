@@ -2,21 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get_utils/get_utils.dart';
 import 'package:loginapp/common/widget_login_signup/form_divider.dart';
 import 'package:loginapp/common/widget_login_signup/social_buttons.dart';
-import 'package:loginapp/features/authentication/screens/signup/signup_form_widget.dart';
-import 'package:loginapp/features/authentication/screens/signup/signupfooterwidget.dart';
-import 'package:loginapp/src/common_widgets/form/form_header_widget.dart';
-// import 'package:loginapp/src/constants/image_strings.dart';
-// import 'package:loginapp/src/constants/text_strings.dart';
-// import 'package:loginapp/src/features/authentication/screens/signup/signupfooterwidget.dart';
-// import 'package:loginapp/src/features/authentication/screens/signup/signup_form_widget.dart';
-
-//import '../../../../constants/sizes.dart';
-import '../../../../../utils/constants/image_strings.dart';
+import 'package:loginapp/features/authentication/screens/signup/signupform.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
-// import '../../../../utils/constants/image_strings.dart';
-// import '../../../../utils/constants/sizes.dart';
-// import '../../../../utils/constants/text_strings.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});

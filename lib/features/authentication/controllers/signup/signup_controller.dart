@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loginapp/data/repositories/user/user_repository.dart';
@@ -7,6 +6,7 @@ import 'package:loginapp/utils/helpers/loader.dart';
 import '../../../../../utils/popups/full_screen_loader.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../models/user_model.dart';
+import '../../screens/forgot_password/forgot_password_otp/otp_screen.dart';
 import '../../screens/mail_verification/verify_email.dart';
 import '../network_manager.dart';
 
@@ -24,7 +24,7 @@ class SignUpController extends GetxController {
 
   GlobalKey<FormState> signupFormKey =
       GlobalKey<FormState>(); //Form key for Form Validation
-  //final userRepo = Get.put(UserRepository());
+  final userRepo = Get.put(UserRepository());
 
   ///-- SIGNUP
   void signup() async {
@@ -87,16 +87,15 @@ class SignUpController extends GetxController {
     //     message: error.toString(),
     //   ));
   }
-}
 
-//   // //Get phoneNo from user and pass it to Auth Repository for firebase Authentication
-//   // Future<void> createUser(UserModel user) async {
-//   //   await userRepo.createUser(user);
-//   //   phoneAuthentication(user.phoneNo);
-//   //   Get.to(() => const OTPScreen());
-//   // }
-//   //
-//   // void phoneAuthentication(String phoneNo) {
-//   //   AuthenticationRepository.instance.phoneAuthentication(phoneNo);
-//   // }
-// }
+  //Get phoneNo from user and pass it to Auth Repository for firebase Authentication
+  Future<void> createUser(UserModel user) async {
+    await userRepo.createUser(user);
+    phoneAuthentication(user.phoneNumber);
+    Get.to(() => const OTPScreen());
+  }
+
+  void phoneAuthentication(String phoneNumber) {
+    AuthenticationRepository.instance.phoneAuthentication(phoneNumber);
+  }
+}

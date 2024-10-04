@@ -108,14 +108,6 @@ class AuthenticationRepository extends GetxController {
     return null;
   }
 
-  // Future<String?> loginWithEmailAndPassword(
-  //     String email, String password) async {
-  //   try {
-  //     await _auth.signInWithEmailAndPassword(email: email, password: password);
-  //   } catch (_) {}
-  //   return null;
-  // }
-
 /*------------------ Email & Password Sign-in--------------------*/
 
 // /// [EmailAuthentication] - LOGIN
@@ -212,6 +204,7 @@ class AuthenticationRepository extends GetxController {
       throw 'Something went wrong.Please try Again';
     }
   }
+
   /*---------------- Federated Identity & Social Sign-in-------------*/
 
   /// [GoogleAuthentication]-GOOGLE
@@ -284,33 +277,13 @@ class AuthenticationRepository extends GetxController {
       throw 'Something went wrong.Please try Again';
     }
   }
+
+  void phoneAuthentication(phoneNumber) {}
+
+  Future<bool> verifyOTP(String otp) async {
+    var credentials = await _auth.signInWithCredential(
+        PhoneAuthProvider.credential(
+            verificationId: _phoneVerificationId.value, smsCode: otp));
+    return credentials.user != null ? true : false;
+  }
 }
-
-////FUNC
-// Future<void> phoneAuthentication(String phoneNo) async {
-//   await _auth.verifyPhoneNumber(
-//     phoneNumber: phoneNo,
-//     verificationCompleted: (credential) async {
-//       await _auth.signInWithCredential(credential);
-//     },
-//     codeSent: (verificationId, resendToken) {
-//       this.verificationId.value = verificationId;
-//     },
-//     codeAutoRetrievalTimeout: (verificationId) {
-//       this.verificationId.value = verificationId;
-//     },
-//     verificationFailed: (e) {
-//       if (e.code == 'invalid-phone-number') {
-//         Get.snackbar('Error', 'The provided phone no is not valid.');
-//       } else {
-//         Get.snackbar('Error', 'Something went wrong.Try again.');
-//       }
-//     },
-//   );
-// }
-
-// Future<bool> verifyOTP(String otp) async {
-//   var credentials = await _auth.signInWithCredential(
-//       PhoneAuthProvider.credential(
-//           verificationId: verificationId.value, smsCode: otp));
-//   return credentials.user != null ? true : false;

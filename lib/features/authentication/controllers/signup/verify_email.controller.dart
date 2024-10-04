@@ -1,13 +1,9 @@
 import 'dart:async';
-import 'package:lottie/lottie.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:loginapp/src/repository/authentication_repository/authentication_repository.dart';
 import 'package:loginapp/utils/helpers/loader.dart';
-
-// import '../../../../constants/image_strings.dart';
 import '../../../../../utils/constants/image_strings.dart';
-//import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/text_strings.dart';
 import '../../screens/mail_verification/SuccessScreen.dart';
 

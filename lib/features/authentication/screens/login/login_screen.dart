@@ -3,17 +3,8 @@ import 'package:get/get.dart';
 import 'package:loginapp/common/styles/spacing_style.dart';
 import 'package:loginapp/common/widget_login_signup/form_divider.dart';
 import 'package:loginapp/common/widget_login_signup/social_buttons.dart';
-// import 'package:loginapp/src/constants/image_strings.dart';
-// import 'package:loginapp/src/constants/sizes.dart';
-// import 'package:loginapp/src/constants/text_strings.dart';
-
-import '../../../../../utils/constants/image_strings.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
-// import '../../../../utils/constants/image_strings.dart';
-// import '../../../../utils/constants/sizes.dart';
-// import '../../../../utils/constants/text_strings.dart';
-import 'login_footer_widget.dart';
 import 'widgets/login_form.dart';
 import 'login_header.dart';
 
@@ -22,7 +13,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
         body: SingleChildScrollView(
